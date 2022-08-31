@@ -1,0 +1,6 @@
+{
+  "lerna": "3.13.1",
+  "npmClient": "npm",
+  "useWorkspaces": true,
+  "version": "0.1.0"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "pillar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "api": "npx tsc -p ./api && export $(cat ./api/.env) && node ./api/dist/index.js",
+    "swap-listener": "npx tsc -p ./swap-listener && export $(cat ./swap-listener/.env) && node ./swap-listener/dist/src/index.js",
+    "db-saver": "npx tsc -p ./db-saver && export $(cat ./db-saver/.env) && node ./db-saver/dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^5.4.3"
+  },
+  "workspaces": [
+    "api/",
+    "swap-listener/",
+    "db-saver/"
+  ]
+}
